@@ -3,7 +3,7 @@ output "vpc_id" {
 }
 
 output "vpc_sg_id" {
-  value = aws_security_group.allow_ssh.id
+  value = aws_security_group.terraform_sg.id
 }
 
 output "vpc_subnet_id" {
