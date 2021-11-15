@@ -25,7 +25,7 @@ resource "aws_instance" "terraform_ec2" {
   subnet_id                   = var.vpc_subnet_id
   associate_public_ip_address = true
   key_name                    = aws_key_pair.terraform_key_pair.key_name
-  user_data                   = var.user_data_path
+  user_data                   = file("${path.module}/install_apache.sh")
 
   tags = {
     "Name" = "terraform_ec2"

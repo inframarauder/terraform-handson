@@ -23,9 +23,3 @@ variable "key_name" {
   description = "The key pair to use"
   default     = "terraform_key_pair"
 }
-
-variable "user_data_path" {
-  type        = string
-  description = "The path to the user data script"
-  default     = "./install_apache.sh"
-}
