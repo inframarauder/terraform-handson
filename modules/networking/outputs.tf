@@ -6,6 +6,6 @@ output "vpc_sg_id" {
   value = aws_security_group.allow_ssh.id
 }
 
-output "subnet_id" {
+output "vpc_subnet_id" {
   value = aws_subnet.terraform_subnet.id
 }

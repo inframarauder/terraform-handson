@@ -14,3 +14,7 @@ variable "vpc_sg_id" {
   type = string
   description = "The VPC security group to use"
 }
+variable "vpc_subnet_id" {
+  type = string
+  description = "The VPC subnet to use"
+}
