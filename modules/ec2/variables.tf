@@ -9,3 +9,8 @@ variable "instance_type" {
   description = "The type of EC2 instance"
   default = "t2.micro"
 }
+
+variable "vpc_sg_id" {
+  type = string
+  description = "The VPC security group to use"
+}
