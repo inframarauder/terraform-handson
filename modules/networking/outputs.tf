@@ -9,3 +9,7 @@ output "vpc_sg_id" {
 output "vpc_subnet_id" {
   value = aws_subnet.terraform_subnet.id
 }
+
+output "instance_availability_zone" {
+  value = aws_subnet.terraform_subnet.availability_zone
+}
